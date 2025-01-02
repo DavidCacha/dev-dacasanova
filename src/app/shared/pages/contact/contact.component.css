@@ -1,0 +1,51 @@
+.contact-section {
+    color: white;
+    text-align: center;
+  }
+  .contact-icon {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  .btn-outline {
+    border: 2px solid white; /* Contorno blanco */
+    background-color: transparent; /* Fondo transparente */
+    color: white; /* Texto blanco */
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline:hover {
+    background-color: white; /* Fondo blanco al pasar el mouse */
+    color: black; /* Texto negro al pasar el mouse */
+  }
+  .footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+
+  @media (max-width: 576px) {
+    .container{
+      padding-bottom: 12px;
+    }
+    .container h1{
+      font-size: 25px;
+    }
+    section p{
+      font-size: 14px !important;
+    }
+    section h2{
+      font-size: 20px;
+    }
+    section .hour{
+      font-size: 15px;
+    }
+    section .col-md-3{
+      width: 50%;
+    }
+    footer{
+      display: none;
+    }
+
+  }

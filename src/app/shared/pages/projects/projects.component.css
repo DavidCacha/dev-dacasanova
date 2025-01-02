@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(120deg, #0e0e0e, #1e1e1e);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .projects-container {
+    text-align: center;
+    display: flex;
+    justify-content: start;
+    padding-left: 58px;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 80px;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: "";
+    display: block;
+    width: 350px;
+    height: 3px;
+    background: #00d8ff;
+    margin: 8px auto 0;
+  }
+  
+  .year-title {
+    font-size: 32px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ffffff, #00d8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 30px;
+  }
+  
+  .projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .project-card {
+    background: #2b2b2b;
+    padding: 15px;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  .project-card h4 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #00d8ff;
+  }
+  
+  .project-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #cccccc;
+  }
+
+
+  .carousel-item {
+    background-size: cover;
+    background-position: center;
+    height: 438px; /* Ajusta la altura según tus necesidades */
+  }
+  .images img{
+    height: 291px;
+  }
+  .carousel-inner{
+    margin-top: -29px;
+  }
+  @media (max-width: 576px) {
+    .carousel-caption{
+      padding-top: 25px;
+      font-size: 10px;
+    }
+    .carousel-item{
+      height: 468px;
+    }
+    .mcm{
+      font-size: 15px ;
+    }
+    .img-mcm{
+      height: 168px !important;
+      margin-top: 53px !important;
+      margin-left: 11px !important;
+    }
+  }

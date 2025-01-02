@@ -1,0 +1,69 @@
+<div class="vw-100" id="contact">
+    <header class="text-white bg-transparent">
+        <div class="container text-center">
+          <h1 class="fw-bold">Ing. Luis David Casanova Chavez</h1>
+          <p class="fst-italic fs-4">Developer Mobile - Developer Frontend</p>
+        </div>
+    </header>
+    <section class="contact-section bg-transparent">
+        <h2 class="fw-bold text-white">Datos de contacto</h2>
+        <p class="hour fst-italic text-white">Cualquier horario <span style="color: #1e90ff;">Disponible</span></p>
+        <div class="container text-white">
+          <div class="row text-center">
+            <div class="col-md-3">
+              <div class="contact-icon">
+                <i class="bi bi-telephone-fill"></i>
+              </div>
+              <p class="fw-bold">Telefono celular</p>
+              <p class="#">+52 7737393856<br>+52 7737019552</p>
+            </div>
+            <div class="col-md-3">
+             <button 
+             onclick="window.location.href='mailto:luisdcasanova1995@gmail.com?subject=Posible%20candidato%20de%20vacante&body=Este%20es%20el%20contenido%20del%20correo';"
+             class="bg-transparent text-white border-0">
+              <div class="contact-icon">
+                <i class="bi bi-envelope-fill"></i>
+              </div>
+              <p class="fw-bold">Email & Website</p>
+              <p>luisdcasanova1995&#64;gmail.com<br>devcasanova.com</p>
+            </button>
+            </div>
+            <div class="col-md-3">
+              <button
+              onclick="window.open('https://www.linkedin.com/in/luis-david-casanova-chavez-13b304195/', '_blank');"
+              class="bg-transparent text-white border-0"
+              >
+                <div class="contact-icon">
+                  <i class="bi bi-linkedin"></i>
+                </div>
+                <p class="fw-bold">LinkedIn</p>
+                <p>luis-david-casanova-chavez-13b304195</p>
+              </button>
+            </div>
+            <div class="col-md-3">
+              <button
+              (click)="openWhatsApp()"
+              class="bg-transparent text-white border-0"
+              >
+                <div class="contact-icon">
+                  <i class="bi bi-whatsapp"></i>              
+                </div>
+                <p class="fw-bold">WhatsApp</p>
+                <p>Contacto directo</p>
+              </button>
+            </div>
+          </div>
+          <div class="text-center pb-4" id="contact">
+            <button (click)="downloadPDF()" class="btn btn-outline">Descarga CV</button>
+          </div>
+        </div>
+      </section>
+    
+      <!-- Footer -->
+      <footer class="footer pb-2 bg-transparent">
+        <h3>Luis David Casanova Chavez</h3>
+        <p>PORTFOLIO 2024</p>
+      </footer>
+</div>
+<shared-footer></shared-footer>
+
