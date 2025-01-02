@@ -18,7 +18,7 @@ export class ContactComponent {
   }
   downloadPDF() {
     const link = document.createElement('a');
-    link.href = './../../../../assets/pdf/CV_LDCCH_spanish.pdf'; // Ruta al archivo PDF
+    link.href = 'assets/pdf/CV_LDCCH_spanish.pdf'; // Ruta al archivo PDF
     link.download = 'documento.pdf'; // Nombre del archivo para la descarga
     link.click();
   }
