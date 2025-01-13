@@ -10,41 +10,47 @@
             <!-- JavaScript -->
             <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                 <div class="px-3 border rounded border-0">
-                    <img src="assets/icons/javascript.svg" class="fs-1 img-fluid" width="80" height="80" alt="JavaScript">
+                    <img src="assets/icons/javascript.svg" class="fs-1 img-fluid" [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80"  alt="JavaScript">
                     <p class="fw-bold language-name language-name text-white mt-xl-4">JavaScript (ES6+)</p>
                 </div>
             </div>
             <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                 <div class="px-3  border rounded border-0">
-                    <img src="assets/icons/typescript.svg" class="fs-1 img-fluid" width="80" height="80" alt="TypeScript">
+                    <img src="assets/icons/typescript.svg" class="fs-1 img-fluid" [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80"  alt="TypeScript">
                     <p class="fw-bold language-name language-name text-white mt-xl-4">TypeScript</p>
                 </div>
             </div>
             <!-- Dart -->
             <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                 <div class="px-2 img border rounded border-0">
-                    <img src="assets/icons/dart.svg" class="fs-1 img-fluid" width="80" height="80" alt="Dart">
+                    <img src="assets/icons/dart.svg" class="fs-1 img-fluid" [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80"  alt="Dart">
                     <p class="fw-bold language-name language-name text-white">Dart</p>
                 </div>
             </div>
             <!-- PHP -->
             <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                 <div class="px-1 img border rounded border-0">
-                    <img src="assets/icons/php.svg" class="fs-1 img-fluid" width="80" height="80" alt="PHP">
+                    <img src="assets/icons/php.svg" class="fs-1 img-fluid" [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80"  alt="PHP">
                     <p class="fw-bold language-name language-name text-white">PHP</p>
                 </div>
             </div>
             <!-- HTML5 -->
             <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                 <div class="px-1 img border rounded border-0">
-                    <img src="assets/icons/html-5.svg" class="fs-1 img-fluid" width="80" height="80" alt="HTML5">
+                    <img src="assets/icons/html-5.svg" class="fs-1 img-fluid" [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80"  alt="HTML5">
                     <p class="fw-bold language-name language-name text-white">HTML5</p>
                 </div>
             </div>
             <!-- CSS3 -->
             <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                 <div class="px-1 img border rounded border-0 mx-auto">
-                    <img src="assets/icons/css3.svg" class="fs-1 img-fluid" width="80" height="80" alt="CSS3">
+                    <img src="assets/icons/css3.svg" class="fs-1 img-fluid" [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80"  alt="CSS3">
                     <p class="fw-bold language-name language-name text-white">CSS3</p>
                 </div>
             </div>
@@ -59,21 +65,27 @@
                 <!-- React.js y React-Native -->
                 <div class="col-4 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                     <div class="px-3 img border rounded border-0">
-                        <img src="assets/icons/React.svg" class="fs-1" width="80" height="isMobile 40px; else 80" alt="React.js y React-Native">
-                        <p class="fw-bold language-name text-white">React.js y React-Native</p>
+                        <img src="assets/icons/React.svg" class="fs-1" 
+                        [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80" 
+                        alt="React.js y React-Native">
+                        <p 
+                        class="fw-bold language-name text-white">  React.js</p>
                     </div>
                 </div>
                 <!-- Flutter -->
                 <div class="col-4 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                     <div class="px-3 img border rounded border-0">
-                        <img src="assets/icons/flutter.svg" class="fs-1" width="80" height="80" alt="Flutter">
+                        <img src="assets/icons/flutter.svg" class="fs-1" [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80"  alt="Flutter">
                         <p class="fw-bold language-name language-name text-white">Flutter</p>
                     </div>
                 </div>
                 <!-- Angular -->
                 <div class="col-4 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                     <div class=" px-3 img border rounded border-0 mx-auto">
-                        <img src="assets/icons/Angular.svg" class="fs-1" width="80" height="80" alt="Angular">
+                        <img src="assets/icons/Angular.svg" class="fs-1" [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80"  alt="Angular">
                         <p class="fw-bold language-name language-name text-white">Angular</p>
                     </div>
                 </div>
@@ -89,7 +101,8 @@
             <!-- Jest -->
             <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                 <div class="px-1 img border rounded border-0">
-                    <img src="assets/icons/Jest.svg" width="80" height="80" alt="Jest">
+                    <img src="assets/icons/Jest.svg" [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80"  alt="Jest">
                     <p class="fw-bold language-name language-name text-white">Jest</p>
                 </div>
             </div>
@@ -104,35 +117,40 @@
                 <!-- Redux -->
                 <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                     <div class="px-1 img border rounded border-0">
-                        <img src="assets/icons/Redux.svg" width="80" height="80" alt="Redux">
+                        <img src="assets/icons/Redux.svg" [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80"  alt="Redux">
                         <p class="fw-bold language-name language-name text-white">Redux</p>
                     </div>
                 </div>
                 <!-- Postman -->
                 <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                     <div class="px-1 img border rounded border-0">
-                        <img src="assets/icons/Postman.svg" width="80" height="80" alt="Postman">
+                        <img src="assets/icons/Postman.svg" [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80"  alt="Postman">
                         <p class="fw-bold language-name language-name text-white">Postman</p>
                     </div>
                 </div>
                 <!-- Xcode -->
                 <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                     <div class="px-1 img border rounded border-0">
-                        <img src="assets/icons/Xcode.svg" width="80" height="80" alt="Xcode">
+                        <img src="assets/icons/Xcode.svg" [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80"  alt="Xcode">
                         <p class="fw-bold language-name language-name text-white">Xcode</p>
                     </div>
                 </div>
                 <!-- Android Studio -->
                 <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                     <div class="px-1 img border rounded border-0">
-                        <img src="assets/icons/Android_Studio.svg" width="80" height="80" alt="Android Studio">
+                        <img src="assets/icons/Android_Studio.svg" [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80"  alt="Android Studio">
                         <p class="fw-bold language-name language-name text-white">Android Studio</p>
                     </div>
                 </div>
                 <!-- Visual Studio -->
                 <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                     <div class="px-1 img border rounded border-0">
-                        <img src="assets/icons/Visual.svg" width="80" height="80" alt="Visual Studio">
+                        <img src="assets/icons/Visual.svg" [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80"  alt="Visual Studio">
                         <p class="fw-bold language-name language-name text-white">Visual Studio</p>
                     </div>
                 </div>
@@ -148,21 +166,30 @@
                 <!-- Git -->
                 <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                     <div class="px-1 img border rounded border-0">
-                        <img src="assets/icons/Git.svg" width="80" height="80" alt="Git">
+                        <img src="assets/icons/Git.svg" 
+                        [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80" 
+                        alt="Git">
                         <p class="fw-bold language-name language-name text-white">Git</p>
                     </div>
                 </div>
                 <!-- GitHub -->
                 <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                     <div class="px-1 img border rounded border-0">
-                        <img src="assets/icons/GitHub.svg" width="80" height="80" alt="GitHub">
+                        <img src="assets/icons/GitHub.svg"
+                        [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80"  
+                        alt="GitHub">
                         <p class="fw-bold language-name language-name text-white">GitHub</p>
                     </div>
                 </div>
                 <!-- GitLab -->
                 <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                     <div class="px-1 img border rounded border-0 mx-auto">
-                        <img src="assets/icons/GitLab.svg" width="80" height="80" alt="GitLab">
+                        <img src="assets/icons/GitLab.svg" 
+                        [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80" 
+                        alt="GitLab">
                         <p class="fw-bold language-name language-name text-white">GitLab</p>
                     </div>
                 </div>
@@ -179,28 +206,42 @@
                 <!-- Bootstrap -->
                 <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                     <div class="px-1 img border rounded border-0">
-                        <img src="assets/icons/Bootstrap.svg" width="80" height="80" alt="Bootstrap">
+                        <img src="assets/icons/Bootstrap.svg" 
+                        [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80" 
+                        alt="Bootstrap">
                         <p class="fw-bold language-name language-name text-white">Bootstrap</p>
                     </div>
                 </div>
                 <!-- Material UI -->
                 <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                     <div class="px-1 img border rounded border-0">
-                        <img src="assets/icons/MaterialUI.svg" width="80" height="80" alt="Material UI">
+                        <img src="assets/icons/MaterialUI.svg" 
+                        [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80" 
+                        alt="Material UI">
                         <p class="fw-bold language-name language-name text-white">Material UI</p>
                     </div>
                 </div>
                 <!-- Tailwind CSS -->
                 <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                     <div class="px-1 img border rounded border-0">
-                        <img src="assets/icons/Tailwind CSS.svg" width="80" height="80" alt="Tailwind CSS">
+                        <img src="assets/icons/Tailwind CSS.svg" 
+                        [attr.width]="isMobile ? 50 : 80" 
+                        [attr.height]="isMobile ? 50 : 80"  
+                        alt="Tailwind CSS">
                         <p class="fs-8 fw-bold language-name language-name text-white">Tailwind</p>
                     </div>
                 </div>
                 <!-- SASS -->
                 <div class="col-3 col-md-2 col-lg-1 col-xl-2 p-lg-3">
                     <div class="px-1 img border rounded border-0">
-                        <img src="assets/icons/Sass.svg" width="80" height="80" alt="SASS">
+                        <img 
+                    src="assets/icons/Sass.svg" 
+                    [attr.width]="isMobile ? 50 : 80" 
+                    [attr.height]="isMobile ? 50 : 80" 
+                    alt="SASS">
+
                         <p class="fw-bold language-name language-name text-white">SASS</p>
                     </div>
                 </div>

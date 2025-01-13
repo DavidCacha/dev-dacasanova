@@ -123,4 +123,7 @@ body {
       margin-left: 15%;
       margin-top: 15%;
     }
+    .section-title::after {
+      width: 275px;
+    }
   }

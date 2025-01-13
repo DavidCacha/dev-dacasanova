@@ -22,11 +22,18 @@ declare var particlesJS: any;
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit{
- 
+    public isMobile: boolean = false; 
     title = 'devcasanova';
     ngOnInit(): void {
-      particlesJS.load('particles-js', '/assets/particlesjs-config.json', function() {
+      this.isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+      if(this.isMobile){
+        particlesJS.load('particles-js', '/assets/particlesjs-config2.json', function() {
           console.log('Particles.js config loaded');
       });
-  }
+      }else{
+        particlesJS.load('particles-js', '/assets/particlesjs-config.json', function() {
+          console.log('Particles.js config loaded');
+      });
+      }
+    }
 }
