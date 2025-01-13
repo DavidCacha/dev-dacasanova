@@ -4,15 +4,6 @@ body {
     font-family: 'Arial', sans-serif;
   }
 
-  .profile-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 10px;
-    padding-top: 7px;
-  }
 
   .profile-text h1 {
     font-size: 3rem;
@@ -42,40 +33,48 @@ body {
   .justify{
     text-align: justify;
   }
-  @media (max-width: 576px) {
-    .profile-img {
-      border-radius: 50%;
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+
+  /* home.component.css */
+#home {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-section {
+  flex: 1; /* Deja espacio suficiente para el footer */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 50px;
+}
+
+  
+  @media screen and (max-width: 480px) {
+    .profile-section{
+      padding-left: 24px;
+      padding-right: 24px;
     }
-    .blockquote{
+    .profile-section h1, .profile-section .hi{
+      display: none;
+    }
+    .profile-section h3{
       font-size: 15px;
     }
-    .profile-text{
-      justify-items: flex-end;
-      margin-top: 224px;
+    .profile-section p{
+      font-size: 13px;
     }
-    .profile-text h1, .hi{
+    .profile-img{
+      width: 180px;
+  height: 180px;
+    }
+    blockquote p{
       display: none;
-    } 
-    .profile-text h3{
-      font-size: 20px;
     }
-    .description{
-      font-size: 12px !important;
+    .profile-text{
+      margin-top: 266px;
+      margin-bottom: 35px;
     }
     .profile-text-2{
-      margin-top: -547px;
-    }
-    .message-profile{
-      display: none;
-    }
-    .ref-contact{
-      margin-left: 10px;
-      position: absolute;
-      z-index: 15;
+      margin-top: -609px;
     }
   }
-  

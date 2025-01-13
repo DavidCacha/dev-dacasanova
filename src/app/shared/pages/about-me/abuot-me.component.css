@@ -25,7 +25,6 @@ body {
 
   .profile-text p {
     margin-top: 20px;
-    font-size: 1rem;
     line-height: 1.6;
   }
 
@@ -37,11 +36,11 @@ body {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   }
   
-  @media (max-width: 576px) {
-    #col{
-      width: 100%;
+  @media screen and (max-width: 390px) {
+    .row .mb-3{
+      margin-bottom: 0px !important;
     }
-    .col-sm-6{
-      width: 50% !important;
+    .language-name{
+      font-size: 10px;
     }
   }

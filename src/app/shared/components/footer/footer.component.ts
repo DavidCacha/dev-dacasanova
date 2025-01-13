@@ -13,17 +13,12 @@ import { Component } from '@angular/core';
     }
 
     .footer {
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 50px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
-      color: white;
-      padding: 0 20px;
-      font-size: 14px;
+      
+  z-index: 5; /* Asegura que esté encima del fondo */
+  text-align: center;
+  padding: 10px 0;
+  margin-top: auto; /* Asegura que esté al final */
+  color: white;
     }
 
     .footer .line {

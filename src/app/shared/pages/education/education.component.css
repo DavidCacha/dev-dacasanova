@@ -28,7 +28,7 @@ body {
   .divider {
     height: 3px;
     background-color:white;
-    width: 359px;
+    width: 60%;
     margin: 15px 0;
   }
   p{
@@ -63,3 +63,14 @@ body {
       font-size: 17px;
     }
   }
+
+  @media (max-width: 768px) {
+    .timeline-year {
+      font-size: 3rem;
+    }
+    .divider{
+      width: 75%;
+    }
+  }
+
+  
