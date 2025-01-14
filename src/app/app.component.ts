@@ -27,11 +27,11 @@ export class AppComponent implements OnInit{
     ngOnInit(): void {
       this.isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
       if(this.isMobile){
-        particlesJS.load('particles-js', './../assets/particlesjs-config2.json', function() {
+        particlesJS.load('particles-js', './assets/particlesjs-config2.json', function() {
           console.log('Particles.js config loaded');
       });
       }else{
-        particlesJS.load('particles-js', './../assets/particlesjs-config.json', function() {
+        particlesJS.load('particles-js', './assets/particlesjs-config.json', function() {
           console.log('Particles.js config loaded');
       });
       }
